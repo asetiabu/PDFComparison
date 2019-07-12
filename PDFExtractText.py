@@ -20,3 +20,5 @@ text = ""
 pageObj = pdfReader.getPage(count)
 text = pageObj.extractText()
 print(text)
+#putting it all together to extract text from the PDF file. It will print all the text.
+#no scanned text? since I wasn't able to install textract.
