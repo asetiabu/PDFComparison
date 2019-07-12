@@ -10,13 +10,12 @@ pdfFileObj = open(filename, 'rb')
 #open allows you to read the file
 
 pdfReader = PyPDF2.PdfFileReader(pdfFileObj)
-#the pdfreader variable is a readable object that will be parsed
+#Here I am creating the pdfreader object. The pdfreader variable is a readable object that will be parsed
 
 num_pages = pdfReader.numPages
 count = 0
 text = ""
-#distinguishing the number of pages will allow us to parse through
-#all the pages
+#Over here, I am getting all the pages
 
 pageObj = pdfReader.getPage(count)
 text = pageObj.extractText()
